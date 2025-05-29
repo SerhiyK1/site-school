@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рудківська гімназія - Новини</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Навігація -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/img/logo_rudky.png" alt="Рудківська гімназія" class="school-logo">
+                    <span class="school-name">Рудківська гімназія</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Новини</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kindergarten.html">Дошкільний підрозділ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-warning ms-3" onclick="showContact()">Долучитися</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Заголовок сторінки -->
+    <section class="page-header py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Новини гімназії</h1>
+                    <p class="lead">Актуальні події та останні новини нашого навчального закладу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основні новини -->
+    <section class="main-news py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="featured-news mb-5">
+                        <div class="featured-image">
+                            <img src="/img/complex.jpg" alt="Головна новина" class="img-fluid rounded">
+                            <div class="featured-badge">Головна новина</div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="news-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> 20 травня 2025</span>
+                                <span class="author"><i class="far fa-user"></i> Адміністрація</span>
+                            </div>
+                            <h2>Відкриття нового спортивного комплексу</h2>
+                            <p>Урочисте відкриття нового спортивного комплексу гімназії відбудеться 25 травня. Усі
+                                бажаючі запрошуються на урочисту церемонію о 12:00.</p>
+                            <a href="#" class="btn btn-primary">Читати повністю</a>
+                        </div>
+                    </div>
+
+                    <div class="news-filters mb-4">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary active">Всі новини</button>
+                            <button type="button" class="btn btn-outline-primary">Події</button>
+                            <button type="button" class="btn btn-outline-primary">Досягнення</button>
+                            <button type="button" class="btn btn-outline-primary">Оголошення</button>
+                        </div>
+                    </div>
+
+                    <div class="news-list">
+                        <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="/img/day_vysyvanka.jpg" alt="Новина 1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category badge bg-primary">Подія</span>
+                                            <span class="date">15 травня 2025</span>
+                                        </div>
+                                        <h3>День вишиванки у гімназії</h3>
+                                        <p>Традиційне святкування Дня вишиванки пройшло у нашій гімназії. Учні та
+                                            вчителі прийшли у національних строях...</p>
+                                        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="/img/win_konkyrs.jpg" alt="Новина 2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category badge bg-success">Досягнення</span>
+                                            <span class="date">10 травня 2025</span>
+                                        </div>
+                                        <h3>Перемога у науковій конференції</h3>
+                                        <p>Учні нашої гімназії зайняли перше місце у міській науковій конференції з
+                                            проектом "Екологічні технології майбутнього"...</p>
+                                        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="/img/rozklad.png" alt="Новина 3" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category badge bg-warning">Оголошення</span>
+                                            <span class="date">5 травня 2025</span>
+                                        </div>
+                                        <h3>Зміни у розкладі</h3>
+                                        <p>З 10 травня вводяться зміни до розкладу занять для 5-9 класів. Просимо
+                                            ознайомитись з новим розкладом...</p>
+                                        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="news-thumbnail">
+                                        <img src="/img/podorosh_to_lviv.jpg" alt="Новина 4" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="news-content">
+                                        <div class="news-meta">
+                                            <span class="category badge bg-primary">Подія</span>
+                                            <span class="date">28 квітня 2025</span>
+                                        </div>
+                                        <h3>Екскурсія до Львова</h3>
+                                        <p>Учні 8-х класів відвідали історичні місця Львова в рамках програми "Пізнай
+                                            свою країну"...</p>
+                                        <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav aria-label="Page navigation" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Попередня</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Наступна</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Пошук новин</h3>
+                            <form class="search-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Пошук...">
+                                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Категорії</h3>
+                            <ul class="category-list">
+                                <li><a href="#">Всі новини <span class="badge bg-primary">24</span></a></li>
+                                <li><a href="#">Події <span class="badge bg-primary">12</span></a></li>
+                                <li><a href="#">Досягнення <span class="badge bg-primary">6</span></a></li>
+                                <li><a href="#">Оголошення <span class="badge bg-primary">4</span></a></li>
+                                <li><a href="#">Спорт <span class="badge bg-primary">2</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Останні новини</h3>
+                            <div class="recent-news">
+                                <div class="recent-item">
+                                    <div class="recent-thumbnail">
+                                        <img src="/img/vypysk.jpg" alt="Новина" class="img-fluid">
+                                    </div>
+                                    <div class="recent-content">
+                                        <h4><a href="#">Випускний вечір 2025</a></h4>
+                                        <span class="date">12 травня 2025</span>
+                                    </div>
+                                </div>
+                                <div class="recent-item">
+                                    <div class="recent-thumbnail">
+                                        <img src="/img/konkurs_readjpg.jpg" alt="Новина" class="img-fluid">
+                                    </div>
+                                    <div class="recent-content">
+                                        <h4><a href="#">Конкурс читців</a></h4>
+                                        <span class="date">8 травня 2025</span>
+                                    </div>
+                                </div>
+                                <div class="recent-item">
+                                    <div class="recent-thumbnail">
+                                        <img src="/img/maysternyajpg.jpg" alt="Новина" class="img-fluid">
+                                    </div>
+                                    <div class="recent-content">
+                                        <h4><a href="#">Відкриття майстерні</a></h4>
+                                        <span class="date">3 травня 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Архів</h3>
+                            <select class="form-select">
+                                <option selected>Оберіть місяць</option>
+                                <option>Травень 2025</option>
+                                <option>Квітень 2025</option>
+                                <option>Березень 2025</option>
+                                <option>Лютий 2025</option>
+                                <option>Січень 2025</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <!-- Футер -->
+    <footer id="contacts" class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-about">
+                        <img src="/img/logo_rudky.png" alt="Рудківська гімназія" class="footer-logo">
+                        <p>Рудківська гімназія - сучасний освітній заклад, де кожна дитина може розкрити свій потенціал.
+                        </p>
+                        <div class="social-links">
+                            <a
+                                href="https://www.facebook.com/people/%D0%93%D1%96%D0%BC%D0%BD%D0%B0%D0%B7%D1%96%D1%8F-%D0%A0%D1%83%D0%B4%D0%BA%D0%B8/100009938353084/"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/rudky_gymnazia/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCU3uGw_hRwQUCKZoxN-vUyg"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Контакти</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> м.Рудки, площа Відродження 27</li>
+                        <li><i class="fas fa-phone"></i> +380 67 599 31 21</li>
+                        <li><i class="fas fa-envelope"></i> gymnazia@ukr.net</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Підписатися на новини</h3>
+                    <form class="subscribe-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                            <button class="btn btn-primary" type="submit">Підписатися</button>
+                        </div>
+                    </form>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41327.916287395594!2d23.41481377824651!3d49.654397849669174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b06cee6ff48bd%3A0x308277ccc1981089!2sRudkivs%CA%B9ka%20Himnaziya%20Sambirs%CA%B9koho%20Rayonu%20L%CA%B9vivs%CA%B9koyi%20Oblasti!5e0!3m2!1sen!2sua!4v1748167494509!5m2!1sen!2sua"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Рудківська гімназія. Всі права захищені.</p>
+                <div class="footer-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Зв'язатися з нами</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Ваше повідомлення"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

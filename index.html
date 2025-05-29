@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рудківська гімназія - Головна</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Навігація -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/img/logo_rudky.png" alt="Рудківська гімназія" class="school-logo">
+                    <span class="school-name">Рудківська гімназія</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Новини</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kindergarten.html">Дошкільний підрозділ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-warning ms-3" onclick="showContact()">Долучитися</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Герой-секція -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Рудківська гімназія</h1>
+                <p class="lead">Сучасна освіта для майбутніх лідерів</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary btn-lg">Дізнатися більше</a>
+                    <a href="#enroll" class="btn btn-outline-light btn-lg">Записатися</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Про гімназію -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Про нашу гімназію</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="highlight">Рудківська гімназія - це сучасний освітній заклад з багаторічними
+                            традиціями якої освіти.</p>
+                        <p>Ми пропонуємо комплексний підхід до навчання, що поєднує академічні знання, творчий розвиток
+                            та виховання громадянської відповідальності.</p>
+                        <div class="features-grid">
+                            <div class="feature-box">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Високий рівень освіти</h4>
+                            </div>
+                            <div class="feature-box">
+                                <i class="fas fa-flask"></i>
+                                <h4>Сучасні лабораторії</h4>
+                            </div>
+                            <div class="feature-box">
+                                <i class="fas fa-paint-brush"></i>
+                                <h4>Творчі гуртки</h4>
+                            </div>
+                            <div class="feature-box">
+                                <i class="fas fa-medal"></i>
+                                <h4>Спортивні досягнення</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="/img/building-photo.jpg" alt="Будівля гімназії" class="img-fluid rounded shadow">
+                        <div class="image-badge">
+                            <span>З 1995 року</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наші переваги -->
+    <section class="advantages-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Чому обирають нас?</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Кваліфіковані викладачі</h3>
+                        <p>Наші педагоги - це професіонали з вищою категорією та багаторічним досвідом роботи.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Сучасні технології</h3>
+                        <p>Комп'ютерні класи, інтерактивні дошки та сучасні навчальні програми.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                        <h3>Міжнародні програми</h3>
+                        <p>Співпраця з іноземними навчальними закладами та мовні програми.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Останні новини -->
+    <section class="news-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Останні новини</h2>
+                <div class="divider"></div>
+                <a href="news.html" class="btn btn-outline-primary see-all">Всі новини</a>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="/img/vysh.jpg" alt="Новина 1" class="img-fluid">
+                            <div class="news-date">15 травня</div>
+                        </div>
+                        <div class="news-body">
+                            <h3>День вишиванки</h3>
+                            <p>Учні та вчителі гімназії святкували День вишиванки, демонструючи національні традиції.
+                            </p>
+                            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="img/confa.jpg" alt="Новина 2" class="img-fluid">
+                            <div class="news-date">10 травня</div>
+                        </div>
+                        <div class="news-body">
+                            <h3>Наукова конференція</h3>
+                            <p>Наші учні взяли участь у міській науковій конференції з трьома проектами.</p>
+                            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="/img/2024_02_05_zmagannya11.jpg" alt="Новина 3" class="img-fluid">
+                            <div class="news-date">5 травня</div>
+                        </div>
+                        <div class="news-body">
+                            <h3>Спортивні досягнення</h3>
+                            <p>Команда гімназії завоювала перше місце у міських змаганнях з волейболу.</p>
+                            <a href="#" class="read-more">Читати далі <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наше життя</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/img/process.jpg" alt="Подія 1" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h4>Навчальний процес</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/gurtok.jpg" alt="Подія 2" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h4>Творчі гуртки</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/sport-school.jpg" alt="Подія 3" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h4>Спортивні змагання</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/svtyato.jpg" alt="Подія 4" class="img-fluid">
+                    <div class="gallery-overlay">
+                        <h4>Святкові заходи</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Переглянути всю галерею</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма запису -->
+    <section id="enroll" class="enroll-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="enroll-form">
+                        <h2>Записатися до гімназії</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Ім'я батьків" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" placeholder="Телефон" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Ім'я дитини" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select class="form-select">
+                                        <option selected>Клас</option>
+                                        <option>1 клас</option>
+                                        <option>2 клас</option>
+                                        <option>3 клас</option>
+                                        <option>4 клас</option>
+                                        <option>5 клас</option>
+                                        <option>6 клас</option>
+                                        <option>7 клас</option>
+                                        <option>8 клас</option>
+                                        <option>9 клас</option>
+                                        <option>10 клас</option>
+                                        <option>11 клас</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Додаткова інформація"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Надіслати заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contacts" class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-about">
+                        <img src="/img/logo_rudky.png" alt="Рудківська гімназія" class="footer-logo">
+                        <p>Рудківська гімназія - сучасний освітній заклад, де кожна дитина може розкрити свій потенціал.
+                        </p>
+                        <div class="social-links">
+                            <a
+                                href="https://www.facebook.com/people/%D0%93%D1%96%D0%BC%D0%BD%D0%B0%D0%B7%D1%96%D1%8F-%D0%A0%D1%83%D0%B4%D0%BA%D0%B8/100009938353084/"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/rudky_gymnazia/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCU3uGw_hRwQUCKZoxN-vUyg"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Контакти</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> м.Рудки, площа Відродження 27</li>
+                        <li><i class="fas fa-phone"></i> +380 67 599 31 21</li>
+                        <li><i class="fas fa-envelope"></i> gymnazia@ukr.net</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Підписатися на новини</h3>
+                    <form class="subscribe-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                            <button class="btn btn-primary" type="submit">Підписатися</button>
+                        </div>
+                    </form>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41327.916287395594!2d23.41481377824651!3d49.654397849669174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b06cee6ff48bd%3A0x308277ccc1981089!2sRudkivs%CA%B9ka%20Himnaziya%20Sambirs%CA%B9koho%20Rayonu%20L%CA%B9vivs%CA%B9koyi%20Oblasti!5e0!3m2!1sen!2sua!4v1748167494509!5m2!1sen!2sua"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Рудківська гімназія. Всі права захищені.</p>
+                <div class="footer-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Зв'язатися з нами</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Ваш email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Ваше повідомлення"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
